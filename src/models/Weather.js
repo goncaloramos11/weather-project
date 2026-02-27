@@ -2,9 +2,9 @@
 import convertFahToCelcius from "../utils/convertTemperature.js";
 export class Weather {
   constructor(data) {
-    this.local = data.address;
-    this.precipitation = data.currentConditions.precip;
-    this.humidity = data.currentConditions.humidity;
-    this.temp = convertFahToCelcius(data.currentConditions.temp);
+    this.icon = data.icon;
+    this.datetime = data.datetime;
+    this.temp = convertFahToCelcius(data.temp);
+    this.description = data.conditions;
   }
 }

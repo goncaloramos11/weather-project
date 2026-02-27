@@ -6,13 +6,21 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
-      <label for="weather">Search: </label>
-      <input id="weather" name="weather" />
-      <button type="submit">Click</button>
-    </form>
-    <div class="weather">
-      <div class="loader"></div>
+    <div class="header">
+      <div class="title">WEATHER PROJECT</div>
+
+      <form>
+        <label for="weather">Search: </label>
+        <input id="weather" name="weather" />
+        <button type="submit">Click</button>
+      </form>
+    </div>
+
+    <div class="weather-container">
+      <span>Location:</span>
+      <div class="local"></div>
+
+      <ul class="cards"></ul>
     </div>
   </body>
 </html>
